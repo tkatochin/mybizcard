@@ -119,3 +119,19 @@
   width: 40px;
   height: 40px;
 }
+
+.area-company-tel {
+  position: absolute;
+  top: 330px;
+  left: 182px;
+  width: 190px;
+  height: 30px;
+}
+
+.area-company-address {
+  position: absolute;
+  top: 300px;
+  left: 182px;
+  width: 560px;
+  height: 30px;
+}
