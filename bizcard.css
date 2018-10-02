@@ -4,6 +4,7 @@
   -o-perspective: 1000;
   perspective: 1000;
   margin: 40px 80px;
+  outline: none;
 }
 
 /* flip the pane when clicked */
@@ -17,8 +18,24 @@
 .flip-container,
 .front,
 .back {
+  width: 100px;
+  height: 60px;
+  background-size: 100px;
+  transition-property: width,height,background-size;
+  transition-duration: 1s;
+  transition-delay: 0s;
+  transition-timing-function: ease;
+}
+
+.flip-container:focus,
+.flip-container:focus .front,
+.flip-container:focus .back,
+.flip-container:active,
+.flip-container:active .front,
+.flip-container:active .back {
   width: 800px;
   height: 483px;
+  background-size: 800px;
 }
 
 /* flip speed goes here */
@@ -54,7 +71,6 @@
 
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: 800px;
 }
 
 /* front pane, placed above back */
@@ -70,14 +86,6 @@
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
   background-image: url(card-rear.svg);
-}
-
-.area-company {
-  position: absolute;
-  top: 365px;
-  left: 180px;
-  width: 340px;
-  height: 45px;
 }
 
 .area-iso {
@@ -134,4 +142,17 @@
   left: 182px;
   width: 560px;
   height: 30px;
+}
+
+.area-company {
+  position: absolute;
+  top: 368px;
+  left: 182px;
+  width: 340px;
+  height: 36px;
+}
+
+a:hover {
+  background-color: white;
+  opacity: 0.4;
 }
