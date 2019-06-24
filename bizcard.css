@@ -88,6 +88,27 @@
   background-image: url(card-rear.svg);
 }
 
+.toggle .front {
+  z-index: 0;
+}
+
+.toggle .back {
+  z-index: 2;
+}
+
+.front a {
+  display: inline-block;
+}
+.back a {
+  display: none;
+}
+.toggle .front a {
+  display: none;
+}
+.toggle .back a {
+  display: inline-block;
+}
+
 .area-iso {
   position: absolute;
   top: 30px;
